@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/goit-react-hw-02-feedback/static/js/main.f6b7c414.js",
+    "main.js": "/goit-react-hw-02-feedback/static/js/main.4cc2048a.js",
     "static/media/bg-vintage-autumn.jpg": "/goit-react-hw-02-feedback/static/media/bg-vintage-autumn.477c926dda051079680f.jpg",
     "index.html": "/goit-react-hw-02-feedback/index.html",
-    "main.f6b7c414.js.map": "/goit-react-hw-02-feedback/static/js/main.f6b7c414.js.map"
+    "main.4cc2048a.js.map": "/goit-react-hw-02-feedback/static/js/main.4cc2048a.js.map"
   },
   "entrypoints": [
-    "static/js/main.f6b7c414.js"
+    "static/js/main.4cc2048a.js"
   ]
 }
