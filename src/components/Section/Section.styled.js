@@ -1,24 +1,18 @@
 import styled from 'styled-components';
 
-export const StatisticsWrapper = styled.div`
-  min-height: 130px;
+export const AppSection = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  background-color: #ded2ca;
+  width: 320px;
+  padding: 60px 30px;
+  box-shadow: 6px 6px 12px 0 rgb(0 0 0 / 51%);
+  min-height: 400px;
 `;
 
-export const StatisticsTitle = styled.h1`
-  font-size: 25px;
-  margin-bottom: 30px;
-`;
-
-export const StatisticsUl = styled.ul`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 230px;
-`;
-
-export const StatisticsItem = styled.li`
-  font-size: 20px;
+export const SectionTitle = styled.h1`
+  text-align: center;
+  font-size: 35px;
 `;

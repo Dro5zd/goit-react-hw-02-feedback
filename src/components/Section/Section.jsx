@@ -1,7 +1,8 @@
 import * as PropTypes from 'prop-types';
 
 import {Component} from 'react';
-import {AppSection, SectionTitle} from '../Statistics/Statistics.styled';
+import {AppSection, SectionTitle} from './Section.styled';
+
 
 export class Section extends Component {
   render() {

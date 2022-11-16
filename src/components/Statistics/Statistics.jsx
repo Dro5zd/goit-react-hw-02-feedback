@@ -1,7 +1,7 @@
 import * as PropTypes from 'prop-types';
 
 import {Component} from 'react';
-import {StatisticsItem, StatisticsTitle, StatisticsUl, StatisticsWrapper} from '../Section/Section.styled';
+import {StatisticsItem, StatisticsTitle, StatisticsUl, StatisticsWrapper} from './Statistics.styled';
 
 
 export class Statistics extends Component {
