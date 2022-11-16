@@ -1,28 +1,18 @@
 import * as PropTypes from 'prop-types';
-import styled from 'styled-components';
 
-const AppSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ded2ca;
-  width: 300px;
-  padding: 60px 30px;
-  box-shadow: 6px 6px 12px 0 rgb(0 0 0 / 51%);
-  min-height: 400px;
-`;
+import {Component} from 'react';
+import {AppSection, SectionTitle} from '../Statistics/Statistics.styled';
 
-const SectionTitle = styled.h1`
-  text-align: center;
-  font-size: 35px;
-`;
-
-export function Section({title, children}) {
-  return <AppSection>
-    <SectionTitle>{title}</SectionTitle>
-    {children}
-  </AppSection>;
+export class Section extends Component {
+  render() {
+    let {title, children} = this.props;
+    return (
+      <AppSection>
+        <SectionTitle>{title}</SectionTitle>
+        {children}
+      </AppSection>
+    );
+  }
 }
 
 Section.propTypes = {

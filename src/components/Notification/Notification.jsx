@@ -1,23 +1,15 @@
 import * as PropTypes from 'prop-types';
-import styled from 'styled-components';
+import {Component} from 'react';
+import {NotificationTitle, StatisticsWrapper} from './Notification.styled';
 
-const StatisticsWrapper = styled.div`
-  min-height: 174px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-
-const NotificationTitle = styled.h2`
-  font-size: 25px;
-  margin-bottom: 80px;
-`
-
-export function Notification({message}) {
-  return <StatisticsWrapper>
-    <NotificationTitle>Statistics</NotificationTitle>
-    <p>{message}</p>
-  </StatisticsWrapper>;
+export class Notification extends Component {
+  render() {
+    let {message} = this.props;
+    return <StatisticsWrapper>
+      <NotificationTitle>Statistics</NotificationTitle>
+      <p>{message}</p>
+    </StatisticsWrapper>;
+  }
 }
 
 Notification.propTypes = {
