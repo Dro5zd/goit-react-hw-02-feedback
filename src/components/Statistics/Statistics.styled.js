@@ -21,4 +21,5 @@ export const StatisticsUl = styled.ul`
 
 export const StatisticsItem = styled.li`
   font-size: 20px;
+  
 `;
