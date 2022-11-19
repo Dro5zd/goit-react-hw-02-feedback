@@ -8,6 +8,7 @@ export function Notification({message}) {
   </StatisticsWrapper>;
 }
 
+
 Notification.propTypes = {
   message: PropTypes.string.isRequired,
 };
