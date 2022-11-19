@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import {Notification} from './components/Notification/Notification';
-import {Section} from './components/Section/Section';
+import {FeedbackFormWrapper} from './components/FeedbackFormWrapper/FeedbackFormWrapper';
 import {Statistics} from './components/Statistics/Statistics';
 import {FeedbackOptions} from './components/FeedbackOptions/FeedbackOptions';
 
@@ -10,11 +10,6 @@ export class FeedbackApp extends Component {
     neutral: 0,
     bad: 0
   };
-
-  constructor() {
-    super();
-    this.onLeaveFeedback = this.onLeaveFeedback.bind(this);
-  }
 
   countTotalFeedback() {
     return Object.values(this.state).reduce((acc, num) => acc + num, 0);
@@ -28,8 +23,8 @@ export class FeedbackApp extends Component {
     return Object.keys(this.state);
   }
 
-  onLeaveFeedback(e) {
-    let btnName = e.currentTarget.id;
+  onLeaveFeedback = (e) => {
+    const btnName = e.currentTarget.id;
     return this.setState(state => {
       return {[btnName]: state[btnName] + 1};
     });
@@ -38,7 +33,7 @@ export class FeedbackApp extends Component {
   render() {
     return (
       <section>
-        <Section title="Please leave feedback">
+        <FeedbackFormWrapper title="PLEASE LEAVE FEEDBACK">
           <FeedbackOptions options={this.buttonsTitle()} onLeaveFeedback={this.onLeaveFeedback}/>
           {this.countTotalFeedback() !== 0
             ? <Statistics good={this.state.good}
@@ -47,7 +42,7 @@ export class FeedbackApp extends Component {
                           total={this.countTotalFeedback()}
                           positivePercentage={this.countPositiveFeedbackPercentage() || 0}/>
             : <Notification message="There is no feedback"/>}
-        </Section>
+        </FeedbackFormWrapper>
       </section>
 
     );

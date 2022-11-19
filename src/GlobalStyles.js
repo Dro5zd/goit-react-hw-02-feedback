@@ -1,5 +1,5 @@
 import {createGlobalStyle} from 'styled-components';
-import img from './components/Section/bg-vintage-autumn.jpg';
+import img from './components/FeedbackFormWrapper/bg-vintage-autumn.jpg';
 
 export const Global = createGlobalStyle`
   * {
@@ -43,10 +43,9 @@ export const Global = createGlobalStyle`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(33, 89%, 14%);
     background-image: url(${img});
+    background-color: hsl(33, 89%, 14%);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover
   }

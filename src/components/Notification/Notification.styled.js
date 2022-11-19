@@ -9,5 +9,5 @@ export const StatisticsWrapper = styled.div`
 
 export const NotificationTitle = styled.h2`
   font-size: 25px;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 `
